@@ -241,17 +241,17 @@ function Mostrarganaste(codigo, textoPromocion) {
     if (codigo === "JUEGOENVIO") {
         const btnOferta1 = document.getElementById("btn-oferta1");
         btnOferta1.addEventListener("click", () => {
-            window.open("https://www.superdry.com.co/envio-gratis-juego", "_blank");
+            window.open("https://www.chopper.com.co/envio-gratis-juego", "_blank");
         });
     } else if (codigo === "JUEGO10") {
         const btnOferta2 = document.getElementById("btn-oferta2");
         btnOferta2.addEventListener("click", () => {
-            window.open( "https://www.superdry.com.co/camisetas-gorras-juego", "_blank");
+            window.open( "https://www.chopper.com.co/camisetas-polos-juego", "_blank");
         });
     } else if (codigo === "JUEGO15") {
         const btnOferta3 = document.getElementById("btn-oferta3");
         btnOferta3.addEventListener("click", () => {
-            window.open("https://www.superdry.com.co/buzos-chaquetas-juego", "_blank");
+            window.open("https://www.chopper.com.co//tenis-juego ", "_blank");
         });
     }
 
