@@ -142,11 +142,11 @@ function Update() {
     velY -= gravedad * deltaTime;
 
 if (score >= 2 && score <= 5 && parado) {
-    Mostrarganaste("juegoenvio", "Envío gratis en tu próxima compra");
+    Mostrarganaste("JUEGOENVIO", "Envío gratis en tu próxima compra");
 } else if(score >=6 && score <=10 && parado) {
-    Mostrarganaste("juego10", "10% dto en camisetas y gorras de precio full");
+    Mostrarganaste("JUEGO10", "10% Ponderado en superiores: Camisetas, Polos, Buzos y Chaquetas");
 } else if(score >= 10 && parado) {
-    Mostrarganaste("juego15", "15% dto en buzos y chaquetas de precio full");
+    Mostrarganaste("JUEGO15", "15% Ponderado  ponderado en tenis");
 }
     
     else if (score <= 1 && parado) {
@@ -192,7 +192,7 @@ function Mostrarganaste(codigo, textoPromocion) {
     let botonHTML = "";
 
     // Dependiendo del código, creamos SOLO UN botón
-    if (codigo === "juegoenvio") {
+    if (codigo === "JUEGOENVIO") {
         botonHTML = `
             <button id="btn-oferta1" 
                 style="background: #06b900; color: #fff; padding: 8px 16px; border: none; 
@@ -200,7 +200,7 @@ function Mostrarganaste(codigo, textoPromocion) {
                 ¡Compra ahora con tu codigo!
             </button>
         `;
-    } else if (codigo === "juego10") {
+    } else if (codigo === "JUEGO10") {
         botonHTML = `
             <button id="btn-oferta2" 
                 style="background: #06b900; color: #fff; padding: 8px 16px; border: none; 
@@ -208,7 +208,7 @@ function Mostrarganaste(codigo, textoPromocion) {
                    ¡Compra ahora con tu codigo!
             </button>
         `;
-    } else if (codigo === "juego15") {
+    } else if (codigo === "JUEGO15") {
         botonHTML = `
             <button id="btn-oferta3" 
                 style="background: #06b900; color: #fff; padding: 8px 16px; border: none; 
@@ -238,17 +238,17 @@ function Mostrarganaste(codigo, textoPromocion) {
     `;
 
     // Ahora agregamos el evento al botón que se haya creado
-    if (codigo === "juegoenvio") {
+    if (codigo === "JUEGOENVIO") {
         const btnOferta1 = document.getElementById("btn-oferta1");
         btnOferta1.addEventListener("click", () => {
             window.open("https://www.superdry.com.co/envio-gratis-juego", "_blank");
         });
-    } else if (codigo === "juego10") {
+    } else if (codigo === "JUEGO10") {
         const btnOferta2 = document.getElementById("btn-oferta2");
         btnOferta2.addEventListener("click", () => {
             window.open( "https://www.superdry.com.co/camisetas-gorras-juego", "_blank");
         });
-    } else if (codigo === "juego15") {
+    } else if (codigo === "JUEGO15") {
         const btnOferta3 = document.getElementById("btn-oferta3");
         btnOferta3.addEventListener("click", () => {
             window.open("https://www.superdry.com.co/buzos-chaquetas-juego", "_blank");
@@ -379,15 +379,15 @@ function GameOver() {
 
 
     if (score >= 2 && score <= 5) {
-        Mostrarganaste("juegoenvio", "Envío gratis en tu próxima compra");
+        Mostrarganaste("JUEGOENVIO", "Envío gratis en tu próxima compra");
         document.getElementById("btn-reiniciar").style.display = "none";
     }
     else if (score >= 6 && score <= 10) {
-        Mostrarganaste("juego10", "10% dto en camisetas y gorras de precio full");
+        Mostrarganaste("JUEGO10", "10% dto en camisetas y gorras de precio full");
         document.getElementById("btn-reiniciar").style.display = "none";
     }
     else if (score >= 10) {
-        Mostrarganaste("juego15", "15% dto en buzos y chaquetas de precio full");
+        Mostrarganaste("JUEGO15", "15% dto en buzos y chaquetas de precio full");
         document.getElementById("btn-reiniciar").style.display = "none";
     }
     else {
