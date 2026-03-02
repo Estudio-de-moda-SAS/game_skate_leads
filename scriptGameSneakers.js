@@ -389,11 +389,11 @@ function GameOver() {
         document.getElementById("btn-reiniciar").style.display = "none";
     }
     else if (score >= 6 && score <= 10) {
-        Mostrarganaste("JUEGO10", "10% dto en camisetas y gorras de precio full");
+        Mostrarganaste("JUEGO10", "10% Ponderado en superiores: Camisetas, Polos, Buzos y Chaquetas");
         document.getElementById("btn-reiniciar").style.display = "none";
     }
     else if (score >= 10) {
-        Mostrarganaste("JUEGO15", "15% dto en buzos y chaquetas de precio full");
+        Mostrarganaste("JUEGO15", "Obsequio Tote bag Marithe Francois Girbaud \n(Este se le otorgará una vez compre cualquier producto de la tienda)");
         document.getElementById("btn-reiniciar").style.display = "none";
     }
     else {
