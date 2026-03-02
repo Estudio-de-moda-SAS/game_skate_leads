@@ -37,9 +37,9 @@ var score = 0;
 var parado = false;
 var saltando = false;
 
-var tiempoHastaObstaculo = 2;
-var tiempoObstaculoMin = 0.7;
-var tiempoObstaculoMax = 1.8;
+var tiempoHastaObstaculo = 4;
+var tiempoObstaculoMin = 1.5;
+var tiempoObstaculoMax = 2.5;
 var obstaculoPosY = 16;
 var obstaculos = [];
 
