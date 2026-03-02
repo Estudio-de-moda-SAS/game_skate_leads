@@ -23,7 +23,7 @@ function Loop() {
 
 var sueloY = 22;
 var velY = 0;
-var impulso = 900;
+var impulso = 800;
 var gravedad = 2500;
 
 var dinoPosX = 42;
@@ -172,9 +172,15 @@ function Saltar() {
         saltando = true;
         velY = impulso;
         dino.classList.remove("dino-corriendo");
+        dino.classList.add("dino-saltando");
+
+        // Después de que termine el salto, volvemos a la animación de correr
+        setTimeout(function() {
+            dino.classList.remove("dino-saltando");
+            dino.classList.add("dino-corriendo");
+        }, 500); // Duración del salto (ajusta este valor según sea necesario)
     }
 }
-
 
 function MostrarMensaje(mensaje) {
     gameOver.style.display = "block";

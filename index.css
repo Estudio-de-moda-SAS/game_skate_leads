@@ -18,7 +18,7 @@ body{
     
     position: relative;
 
-    background: url(https://chopper.vteximg.com.br/arquivos/Chpper-Juego-Edificios-nuevos-3.png);
+    background: url(https://chopper.vteximg.com.br/arquivos/Chopper-Personajes-Ciudad-3.jpg);
     transition: background-color 1s linear;
     overflow: hidden;
 }
@@ -44,14 +44,14 @@ body{
     left: 42px;
     z-index: 2;
 
-    background: url(https://chopper.vteximg.com.br/arquivos/chopper-personaje-juego.png) repeat-x 0px 0px;
+    background: url(https://chopper.vteximg.com.br/arquivos/Chopper-Personajes-Personaje-4.png) repeat-x 0px 0px;
     background-size: 336px 84px;
     background-position-x: 0px;
 
 }
 
 .dino-corriendo {
-    animation: animarDino 0.25s steps(2) infinite;
+    animation: animarDino 1s steps(2) infinite;
 }
 .dino-estrellado {
     background-position-x: -252px;
@@ -63,13 +63,13 @@ body{
     position: absolute;
     bottom: 0;
     left: 0;
-    background: url(https://chopper.vteximg.com.br/arquivos/Chpper-Juego-Pista-nueva-2.png) repeat-x 0px 0px;
+    background: url(https://chopper.vteximg.com.br/arquivos/Chopper-Personajes-Pista-3.jpg) repeat-x 0px 0px;
     background-size: 50% 42px;
 
 }
 
 .cactus{
-       width: 122px;
+       width: 118px;
     height: 80px;
 
     position: absolute;
@@ -77,12 +77,12 @@ body{
     left: 600px;
     z-index: 1;
 
-    background: url( https://chopper.vteximg.com.br/arquivos/Chopper-Juego-Obstaculo-Carro-nuevo.png) no-repeat;
+    background: url( https://chopper.vteximg.com.br/arquivos/Chopper-Juego-febrer-2026-tenis1.png) no-repeat;
 }
 .cactus2{
-width: 119px;
-    height: 71px;
-    background: url( https://chopper.vteximg.com.br/arquivos/Chopper-Juego-Obstaculo-Carro-2-nuevo.png)  no-repeat;
+width: 117px;
+     height: 79px;
+    background: url( https://chopper.vteximg.com.br/arquivos/Chopper-Juego-febrer-2026-tenis2.png)  no-repeat;
 
 }
 
@@ -92,7 +92,7 @@ width: 119px;
 
     position: absolute;
     z-index: 0;
-background: url( https://pilatos21.vtexassets.com/arquivos/Pilatos-SneakersCity-Juego-Nube.png ) no-repeat;
+background: url( https://chopper.vteximg.com.br/arquivos/Chopper-Personajes-Nubes-3.png) no-repeat;
     background-size: 92px 26px;
     margin-bottom: 149px;
 }
